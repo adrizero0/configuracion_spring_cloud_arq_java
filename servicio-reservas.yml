@@ -28,3 +28,6 @@ spring:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+client:
+  url:
+    vuelos: http://servicio-vuelos/vuelos/vuelos/
