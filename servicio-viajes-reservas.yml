@@ -30,4 +30,4 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 client:
   url:
-    vuelos: http://servicio-vuelos/vuelos/vuelos/
+    vuelos: http://servicio-viajes-vuelos/vuelos/vuelos/
