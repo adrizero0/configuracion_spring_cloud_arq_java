@@ -9,8 +9,18 @@ zuul:
       servicio-cliente-personas: # Service to create as sample
         path: /cliente/** #path that will be intercepted
         serviceId: servicio-cliente-personas
+        
+      servicio-vuelos: # Service to create as sample
+        path: /vuelos/** #path that will be intercepted
+        serviceId: servicio-vuelos
+      servicio-hoteles: # Service to create as sample
+        path: /hoteles/** #path that will be intercepted
+        serviceId: ws-hoteles
+      servicio-reservas: # Service to create as sample
+        path: /reservas/** #path that will be intercepted
+        serviceId: ws-reservas
       
 eureka:                  
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka 
+      defaultZone: http://10.2.4.11:8761/eureka 
