@@ -9,7 +9,7 @@ eureka:
   instance:
     ip-address:  10.2.4.12
     prefer-ip-adress: true
-    instance-id: 10.2.4.12:8000      
+    instance-id: 10.2.4.12:8600
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
