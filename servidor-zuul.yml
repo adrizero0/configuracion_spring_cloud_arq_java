@@ -1,7 +1,8 @@
 server:
   port: 7000 # puerto del zuul service 
 zuul:
-  ignoredServices: '*'
+  ignoredServices: '*'  
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   routes:
       servicio-personas: # Service to create as sample
         path: /personas/** #path that will be intercepted
@@ -21,8 +22,4 @@ zuul:
 eureka:                  
   client:
     serviceUrl:
-      defaultZone: http://10.2.4.11:8761/eureka 
-  instance:
-      ip-address:  10.2.4.12
-      prefer-ip-adress: true
-      instance-id: 10.2.4.12:7000
+      defaultZone: http://10.2.4.11:8761/eureka
