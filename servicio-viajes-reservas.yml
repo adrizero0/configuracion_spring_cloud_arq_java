@@ -12,6 +12,17 @@ eureka:
   # ip-address:  192.168.0.10
     prefer-ip-adress: true
     instance-id: 10.2.4.12:8700
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.2.4.12:3306/viajes
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 client:
   url:
     vuelos: http://servicio-viajes-vuelos/vuelos/vuelos/vuelos
