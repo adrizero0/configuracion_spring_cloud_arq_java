@@ -5,13 +5,13 @@ server:
 eureka:
   client:
     service-url:
-    # defaultZone: http://10.2.4.12:8761/eureka
-     defaultZone: http://localhost:8761/eureka
-#  instance:
-   # ip-address:  10.2.4.12
-#    ip-address:  192.168.0.10
-#    prefer-ip-adress: true
- #   instance-id: 192.168.0.10:8700
+      defaultZone: http://10.2.4.12:8761/eureka
+    # defaultZone: http://localhost:8761/eureka
+  instance:
+    ip-address:  10.2.4.12
+  #  ip-address:  192.168.0.10
+    prefer-ip-adress: true
+    instance-id: 10.2.4.12:8700
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
